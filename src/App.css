@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.header {
+  background: #243b80;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-section,
+.events-section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.form-section h2,
+.events-section h2 {
+  color: #243b80;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd2df;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form button {
+  background: #243b80;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+form button:hover {
+  background: #17295f;
+}
+
+.empty {
+  color: #666;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  border: 1px solid #e0e4ed;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+}
+
+.event-card h3 {
+  color: #243b80;
+}
+
+.delete-btn {
+  background: #d93636;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #243b80;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Improve input focus visibility */
+input:focus,
+textarea:focus {
+  outline: 2px solid #243b80;
+  outline-offset: 1px;
+  border-color: #243b80;
+}
+
+/* Keep form buttons aligned neatly */
+form button {
+  width: fit-content;
+  min-width: 120px;
+}
+
+/* Improve event card readability */
+.event-card {
+  overflow-wrap: anywhere;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 5px 16px #00000014;
+  transform: translateY(-2px);
+}
+
+.event-card p {
+  line-height: 1.5;
+}
+
+/* Add hover feedback to Delete */
+.delete-btn:hover {
+  background: #b42323;
+}
+
+/* Make the layout comfortable on small screens */
+@media (max-width: 600px) {
+  .container {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .form-section,
+  .events-section {
+    padding: 18px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+
