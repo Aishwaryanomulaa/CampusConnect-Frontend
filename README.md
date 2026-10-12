@@ -1,16 +1,51 @@
-# React + Vite
+# CampusConnect – Campus Event Registration and Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+CampusConnect is a Java Full Stack mini project developed to manage college events. It allows users to create, view, update, and delete event details through a simple web interface.
 
-Currently, two official plugins are available:
+## Objectives
+- Implement CRUD operations for campus events.
+- Develop a user-friendly frontend using React.js.
+- Connect the frontend to REST APIs developed using Java Spring Boot.
+- Store event information in a MySQL database.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- **Frontend:** React.js, JavaScript, CSS
+- **Backend:** Java, Spring Boot
+- **Database:** MySQL
+- **API Integration:** Axios
+- **Build Tool:** Vite
 
-## React Compiler
+## Features
+1. Add new campus events.
+2. View all events.
+3. Update existing event details.
+4. Delete events.
+5. Display event name, date, time, venue, description, and available seats.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Frontend Screenshots
 
-## Expanding the ESLint configuration
+### Homepage
+![CampusConnect Homepage](./fe.1.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Event Management
+![CampusConnect Events](./fe.2.png)
+
+### Delete Event
+![Delete Event Screenshot](./delete_event.fe.png)
+
+### Edit Event
+![Edit Event Screenshot](./edit_event.fe.png)
+
+## Project Structure
+- `src/App.jsx` – Main React application
+- `src/App.css` – Application styling
+- `src/api.js` – Backend API connection
+- `src/main.jsx` – React entry point
+- `public/` – Public assets
+
+## Backend
+The backend is developed separately using Java Spring Boot and MySQL.
+
+## Conclusion
+CampusConnect demonstrates the practical implementation of CRUD operations and frontend-backend integration using React.js, Spring Boot, REST APIs, and MySQL.
