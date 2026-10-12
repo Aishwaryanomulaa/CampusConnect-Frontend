@@ -24,7 +24,16 @@ CampusConnect is a Java Full Stack mini project developed to manage college even
 5. Display event name, date, time, venue, description, and available seats.
 
 ## Frontend Screenshots
-Screenshots of the running CampusConnect application will be included in this section.
+![Frontend Screenshot 1](./fe.1.png)
+
+![Frontend Screenshot 2](./fe.2.png)
+
+### 3. Delete Event
+![Delete Event Screenshot](delete_event.fe.png)
+
+### 4. Edit Event
+![Edit Event Screenshot](edit_event.fe.png)
+
 
 
 ## Project Structure
